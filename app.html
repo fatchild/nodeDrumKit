@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Drumkit</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--viewport for mobile first design-->
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥁</text></svg>" />
+
+    <link rel="stylesheet" type="text/css" href="./css/drumkit.css" />
+    <script src="./drumkit/drumkit.js" defer type="module"></script>
+
+    <!-- INCLUDE Bootstrap 4 from a CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+    <div class="container-fluid">
+        <div class="d-flex justify-content-center">
+            <h1 class="display-4">Drumkit</h1>
+        </div>
+        <div id="accordion">
+            <div class="card my-3">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Guide
+                  </button>
+                </h5>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                      <h4>Click pads in the interface or use your keyboard</h4>
+                      <p>Use keys 3-4, E-Y, D-H, C-N</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="jumbotron">
+            <div class="w-75 m-auto">
+                <div class="row mb-0">
+                    <div onclick="playSample('kick.wav')"           class="col-sm btn btn-secondary p-5 m-2">Kick</div>
+                    <div onclick="playSample('snare.wav')"          class="col-sm btn btn-secondary p-5 m-2">Snare</div>
+                    <div onclick="playSample('hihatclosed.wav')"    class="col-sm btn btn-secondary p-5 m-2">Hi-Hat Closed</div>
+                    <div onclick="playSample('808-ho06.wav')"       class="col-sm btn btn-secondary p-5 m-2">Hi-Hat Open</div>
+                </div>
+                <div class="row mb-0">
+                    <div onclick="playSample('808-sd21.wav')" class="col-sm btn btn-success p-5 m-2">Tom 1</div>
+                    <div onclick="playSample('808-thi2.wav')" class="col-sm btn btn-success p-5 m-2">Tom 2</div>
+                    <div onclick="playSample('808-thi1.wav')" class="col-sm btn btn-success p-5 m-2">Tom 3</div>
+                    <div onclick="playSample('808-tlo1.wav')" class="col-sm btn btn-success p-5 m-2">Tom 4</div>
+                </div>
+                <div class="row mb-0">
+                    <div onclick="playSample('808-cym01.wav')" class="col-sm btn btn-warning p-5 m-2">Crash 1</div>
+                    <div onclick="playSample('808-cym03.wav')" class="col-sm btn btn-warning p-5 m-2">Crash 2</div>
+                    <div onclick="playSample('808-cym07.wav')" class="col-sm btn btn-warning p-5 m-2">Crash 3</div>
+                    <div onclick="playSample('808-cym09.wav')" class="col-sm btn btn-warning p-5 m-2">Crash 4</div>
+                </div>
+                <div class="row mb-0">
+                    <div onclick="playSample('808-clo1.wav')" class="col-sm btn btn-danger p-5 m-2">Pad 1</div>
+                    <div onclick="playSample('808-clo2.wav')" class="col-sm btn btn-danger p-5 m-2">Pad 2</div>
+                    <div onclick="playSample('808-clo3.wav')" class="col-sm btn btn-danger p-5 m-2">Pad 3</div>
+                    <div onclick="playSample('808-cme1.wav')" class="col-sm btn btn-danger p-5 m-2">Pad 4</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  </body>
+</html>
+<footer>
+  <p class="pl-4 py-0">v1.0.0<a href="https://github.com/fatchild"><img class="ml-2" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="20"></img></a></p>
+</footer>
